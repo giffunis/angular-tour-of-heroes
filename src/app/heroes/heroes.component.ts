@@ -25,6 +25,7 @@ export class HeroesComponent implements OnInit {
         .subscribe(heroes => this.heroes = heroes);
   }
   
+  // Ahora no se utiliza gracias a los links
   onSelect(hero: Hero): void {
     this.selectedHero = hero;
     this.messageService.add(`HeroService: Selected hero id=${hero.id} with name ${hero.name}`);
